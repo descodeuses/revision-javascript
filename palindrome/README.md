@@ -27,3 +27,14 @@ Deuxième exemple :
 - l'inverse : "kayak"
 - comparaison : "kayak" pareil que "kayak" ?
 - c'est palindrome
+
+### Détail de l'inversion d'un mot
+
+- récupération d'un mot
+- découper le mot en une liste ordonnée de lettres 
+- je crée une nouvelle liste ordonnée 
+- on prend la liste ordonnée par la fin, et tant que nous ne sommes pas à la première lettre, on passe à la suivant
+    - j'ajoute à la nouvelle liste ordonnée
+- la nouvelle liste ordonnée contient les lettres du mot à l'envers
+- on rassemble les lettres dans un nouveau mot.  
+
