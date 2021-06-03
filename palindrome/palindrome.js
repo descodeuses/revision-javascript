@@ -1,5 +1,7 @@
 console.log("au moment ou le fichier est lu au premier chargement par le navigateur")
 
+document.getElementById("recherchePalindrome").addEventListener("click", estCeUnPalindrome)
+
 function estCeUnPalindrome () {
     let mot = document.getElementById("mot").value.toLowerCase();
     let motInverse = mot.split("").reverse().join("");
