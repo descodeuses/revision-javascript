@@ -38,3 +38,16 @@ Deuxième exemple :
 - la nouvelle liste ordonnée contient les lettres du mot à l'envers
 - on rassemble les lettres dans un nouveau mot.  
 
+### Un autre algoritme d'analyse
+
+- récupération d'un mot
+
+- tant qu'il reste des lettres au mot
+    - retirer la première lettre du mot
+        - si c'est la dernière, alors c'est un palindrome (sortie)
+    - retirer la dernière lettre du mot
+    - comparer les deux lettres
+        - si égale, alors on passe à la suivante
+        - Sinon, ce n'est pas un palindrome (sortie)
+
+- 
