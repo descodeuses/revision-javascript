@@ -3,7 +3,11 @@ console.log("au moment ou le fichier est lu au premier chargement par le navigat
 function estCeUnPalindrome () {
     let mot = document.getElementById("mot").value;
     let motInverse = mot.split("").reverse().join("");
+    let resultat = document.getElementById("resultat");
+
     if (mot === motInverse) {
-        console.log("PALINDROME DETECTED !")
+        resultat.innerHTML = "Palindrome détecté !"
+    } else {
+        resultat.innerHTML  = "Ce mot n'est pas un palindrome"
     }
 }
