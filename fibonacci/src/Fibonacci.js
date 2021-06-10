@@ -28,14 +28,14 @@ function donne10PremiersElementsFibo(combien) {
         suite.push(1)
     }
 
-    let elementPrecedent = 0
-    let elementPrecedentPrecedent = 1
+    let valeurElementPrecedent = 0
+    let valeurElementPrecedentPrecedent = 1
         
     for (let i = 2; i <= combien; i++) {
-        suite.push(elementPrecedent + elementPrecedentPrecedent)
+        suite.push(valeurElementPrecedent + valeurElementPrecedentPrecedent)
         console.log(i, suite)
-        elementPrecedent = suite[i - 1]
-        elementPrecedentPrecedent = suite[i - 2]
+        valeurElementPrecedent = suite[i - 1]
+        valeurElementPrecedentPrecedent = suite[i - 2]
     }
 
     return suite
