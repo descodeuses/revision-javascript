@@ -1,5 +1,13 @@
 # Cours de soutien à JavaScript
 
+## Le 10 juin 2021
+
+En TDD, nous avons exploré la suite de [Fibonacci](fibonacci/).
+
+## Le 3 juin 2021
+
+Nous avons fait un exercice sur les [palindromes](palindrome/).
+
 ## Le 28 mai 2021
 
 _Format un peu trop court magistral peut-être..._
