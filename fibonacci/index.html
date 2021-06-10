@@ -10,14 +10,25 @@
 <body>
     <h1>Fibonacci & co</h1>
     <section>
-        <h1>Les 10 premiers élément de la suite</h1>
-        <button id="afficheSuite10ElementFibo">Affiche les !</button>
+        <h1>Les premiers élément de la suite</h1>
+        
+        <p>
+            <label>
+                Combien d'éléments de la suite :
+                <br/>
+                <input id="combienDElement" type="number" min="0">
+            </label>
+        </p>
+        <p>
+            <button id="afficheSuite10ElementFibo">Affiche les !</button>
+        </p>
+
         <p id="dixPremiersElementsFibo"></p>
     </section>
 
     <script>
         afficheSuite10ElementFibo.addEventListener("click", function () {
-            dixPremiersElementsFibo.innerHTML = donne10PremiersElementsFibo()
+            dixPremiersElementsFibo.innerHTML = donne10PremiersElementsFibo(combienDElement.value)
         })
     </script>
 </body>
