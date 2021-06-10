@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="src/Fibonacci.js"></script>
     <title>Fibonacci & co</title>
 </head>
 <body>
@@ -14,14 +15,10 @@
     </section>
 
     <script>
-
-        const affiche10PremiersElementsFibo = function () {
+        afficheSuite10ElementFibo.addEventListener("click", function () {
             let dixPremiersElementsFibo = donne10PremiersElementsFibo()
-        }
-        
-        let boutonAffiche = document.getElementById("afficheSuite10ElementFibo")
-        boutonAffiche.addEventListener("click", affiche10PremiersElementsFibo)
-
+            console.log(dixPremiersElementsFibo)
+        })
     </script>
 </body>
 </html>
