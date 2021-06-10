@@ -23,4 +23,10 @@ describe("Fibonacci", function() {
     // Vérifier le résultat
     expect(resultat).toEqual(resultatAttendu);
   });
+
+
+  it("donne10PremiersElementsFibo(5)", function() {
+    expect(donne10PremiersElementsFibo(5)).toEqual([0, 1, 1, 2, 3]);
+  });
+
 });

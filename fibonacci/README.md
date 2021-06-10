@@ -26,3 +26,4 @@ spec : spécification (ou test)
 
 Utilisation de [Jasmine](https://jasmine.github.io/) pour écrire les test
 
+[La page Wikipedia du TDD](https://fr.wikipedia.org/wiki/Test_driven_development) avec une image du cycle de la pratique.
