@@ -31,7 +31,7 @@ function donne10PremiersElementsFibo(combien) {
     let valeurElementPrecedent = 0
     let valeurElementPrecedentPrecedent = 1
         
-    for (let i = 2; i <= combien; i++) {
+    for (let i = 2; i < combien; i++) {
         suite.push(valeurElementPrecedent + valeurElementPrecedentPrecedent)
         console.log(i, suite)
         valeurElementPrecedent = suite[i - 1]
