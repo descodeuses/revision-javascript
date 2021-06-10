@@ -12,12 +12,12 @@
     <section>
         <h1>Les 10 premiers élément de la suite</h1>
         <button id="afficheSuite10ElementFibo">Affiche les !</button>
+        <p id="dixPremiersElementsFibo"></p>
     </section>
 
     <script>
         afficheSuite10ElementFibo.addEventListener("click", function () {
-            let dixPremiersElementsFibo = donne10PremiersElementsFibo()
-            console.log(dixPremiersElementsFibo)
+            dixPremiersElementsFibo.innerHTML = donne10PremiersElementsFibo()
         })
     </script>
 </body>
