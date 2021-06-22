@@ -14,7 +14,7 @@ Sinon
 le nombre est égale à la somme des deux précédents.
 
 */
-function donne10PremiersElementsFibo(combien) {
+const donne10PremiersElementsFibo = function (combien) {
     if (combien <= 0) {
         return []
     }
@@ -28,15 +28,13 @@ function donne10PremiersElementsFibo(combien) {
         suite.push(1)
     }
 
-    let valeurElementPrecedent = 0
-    let valeurElementPrecedentPrecedent = 1
-        
     for (let i = 2; i < combien; i++) {
+        let valeurElementPrecedentPrecedent = suite[i - 2]
+        let valeurElementPrecedent = suite[i - 1]
         suite.push(valeurElementPrecedent + valeurElementPrecedentPrecedent)
-        console.log(i, suite)
-        valeurElementPrecedent = suite[i - 1]
-        valeurElementPrecedentPrecedent = suite[i - 2]
     }
 
     return suite
 }
+
+
