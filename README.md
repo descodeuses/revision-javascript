@@ -1,5 +1,9 @@
 # Cours de soutien à JavaScript
 
+## Le 22 juin 2021
+
+Nous faisons l'exerice [counting valleys](/counting-valleys).
+
 ## Le 10 juin 2021
 
 En TDD, nous avons exploré la suite de [Fibonacci](fibonacci/).
