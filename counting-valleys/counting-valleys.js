@@ -23,11 +23,16 @@ Structure de contrôle permettant de détecter une valée
 
 */
 const countNumberOfValleysFor = (steps) => {
-    let splittedSteps = steps.split("")
-    let numberOfU = splittedSteps.filter((e) => { return e == "U"}).length
-    let numberOfD = splittedSteps.filter((e) => { return e == "D"}).length
-    console.log(splittedSteps, numberOfU,numberOfD )
-    console.log(numberOfU == numberOfD)
+
+    let positionAgainstSeaLevel = 0;
+    for(step of steps) {
+        if (step == "U") {
+            positionAgainstSeaLevel++;
+        } else if (step == "D") {
+            positionAgainstSeaLevel--;
+        }
+        console.log(step, positionAgainstSeaLevel)
+    }
 
     return 0
 }
