@@ -24,15 +24,21 @@ Structure de contrôle permettant de détecter une valée
 */
 const countNumberOfValleysFor = (steps) => {
 
-    let positionAgainstSeaLevel = 0;
+    let positionAgainstSeaLevel = 0
+    let numberOfValleys = 0
     for(step of steps) {
         if (step == "U") {
-            positionAgainstSeaLevel++;
+            positionAgainstSeaLevel++
         } else if (step == "D") {
-            positionAgainstSeaLevel--;
+            positionAgainstSeaLevel--
         }
         console.log(step, positionAgainstSeaLevel)
+        if (positionAgainstSeaLevel == 0) {
+            if (step == "U") {
+                numberOfValleys++
+            }
+        }
     }
 
-    return 0
+    return numberOfValleys
 }
