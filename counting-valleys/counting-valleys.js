@@ -32,11 +32,10 @@ const countNumberOfValleysFor = (steps) => {
         } else if (step == "D") {
             positionAgainstSeaLevel--
         }
-        console.log(step, positionAgainstSeaLevel)
-        if (positionAgainstSeaLevel == 0) {
-            if (step == "U") {
-                numberOfValleys++
-            }
+        // DEBUG.
+        // console.log(step, positionAgainstSeaLevel)
+        if (positionAgainstSeaLevel == 0 && step == "U") {
+            numberOfValleys++
         }
     }
 
